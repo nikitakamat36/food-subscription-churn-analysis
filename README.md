@@ -1,45 +1,152 @@
-# food-subscription-churn-analysis
-Customer churn analysis project using data analytics to identify key drivers of attrition and improve retention strategies in a food subscription business.
+# Food Delivery Subscription Customer Churn Analysis & Retention Strategy
+A comprehensive end-to-end customer analytics and machine learning solution for understanding customer churn causes from food delivery subscriptions has been developed. This involves analyzing customer behavior, spending, satisfaction level, and engagement with their subscriptions in order to forecast customer churn and suggest data-informed retention methods.
+The process uses Exploratory Data Analysis (EDA), customer segmentation, and machine learning algorithms to help subscription-based companies minimize customer churn and increase their retention rate.
 
-#Problem Statement
+**Business Problem**
+The subscription food ordering services suffer huge losses because of customer churn rates. Customer retention proves to be cheaper than customer acquisition, making customer retention one of the essential goals for any business.
 
-Subscription-based businesses often experience revenue loss due to customer churn.
-This project analyzes customer behavior in a food subscription service to identify key drivers of churn and provide strategies to improve retention.
+The company needed to know the following things:
+1. Who are the customers who tend to churn
+2. Which behaviors have an impact on the churn rate
+3. How does customer satisfaction affect retention
+4. Which customers tend to churn
+5. How predictive analytics could help in improving retention strategies
+6. What operations need improvement to reduce customer churn
 
-#Business Objectives
+**Business Objective**
 1. Identify factors contributing to customer churn
-2. Analyze behavioral differences between retained and churned customers
-3. Segment customers based on churn risk
-4. Provide data-driven recommendations to improve retention
+2. Analyze customer subscription behavior
+3. Analyze behavioral differences between retained and churned customers
+4. Predict high-risk customers using machine learning
+5. Segment customers based on churn risk
+6. Provide data-driven recommendations to improve retention
 
-#Tech Stack
-1. Python (Data Analysis)
+**Tools & Technology**
+1. Python -  Data analysis & machine learning (libraries used: Pandas, Numpy, Matplotlib, Seaborn, Scikit-Learn)
 2. Excel (Data Cleaning & Exploration)
 
-#Key Insights
-1. Customers with low engagement are more likely to churn
-2. High churn occurs during early stages of subscription
-3. Frequent users show significantly higher retention
-4. Customer behavior patterns strongly influence churn
+**Dataset**
+Food delivery subscription customer dataset - primary data collection through google form
+500+ customer records
 
-#Key Drivers of Churn
-1. Low order frequency
-2. Poor initial engagement
-3. Pricing sensitivity
-4. Lack of personalized experience
+**Key Business KPI's**
+1. Total Customers - 500
+2. Customer Churn Rate - 21.8%
+3. Customer Retention Rate - 78.2 %
+4. Average Monthly Spend - 814 rs
+5. Average Subscription Duration - 8 months
+6. Random Forest Model Accuracy - 93%
 
-#Customer Segmentation
-1. High Risk: Low engagement, infrequent usage
-2. Medium Risk: Moderate activity
-3. Low Risk: Frequent and loyal customers
+**Analysis**
+**1. Customer Demographic Analysis**
+* Age groups
+* Occupation
+* City distribution
+* Customer engagement patterns
+  
+**Key Findings**
+* Young adults and professionals were the main subscribers to the subscription packages
+* The highest rate of subscriber turnover was among professionals (~33.7%)
+* Students displayed relatively high subscription retention rates
 
-#Business Impact
-1. Identified high-risk customer segments
-2. Highlighted revenue loss due to churn
-3. Provided insights for improving retention strategies
+**Business Insight**
+* Working professionals showed higher subscription cancellation risk, indicating a need for targeted retention campaigns and personalized engagement strategies.
 
-#Recommendations
-1. Improve onboarding experience for new users
-2. Introduce personalized offers and recommendations
-3. Increase engagement through targeted campaigns
-4. Monitor at-risk customers proactively
+**2. Customer Spending Behavior Analysis**
+* Monthly customer spending
+* Spending behavior of retained vs churned customers
+* Revenue contribution patterns
+
+**Key Findings**
+* Average monthly expenditure: ₹814
+* The retained customers outspent the churned customers substantially.
+* High-expenditure customers exhibited greater loyalty and lesser churn tendency.
+
+**Business Insight**
+Customers receiving higher value from the platform were more likely to remain subscribed, highlighting the importance of increasing customer engagement and platform dependency.
+
+**Recommendations**
+Implement Subscription-exclusive offers & Personalized restaurant recommendations also give Loyalty rewards for frequent users
+
+**3. Subscription Duration & Retention Analysis**
+* Subscription duration patterns
+* Relationship between subscription length and churn
+
+**Key Findings**
+* Average time to subscription: 8.56 months
+* New clients were more likely to churn
+* Long-term clients had better loyalty towards the platform
+  
+**Business Insight**
+Early stage customers are high likely to churn.
+
+**Recommendations**
+Improve onboarding experience by giving welcome offers, have early stage campaigns, personalised onboarding, free delivery and discounts.
+
+**4. Customer Satisfaction Analysis**
+* Delivery ratings
+* App ratings
+* Value-for-money ratings
+* Restaurant experience ratings
+
+**Key Findings**
+* Delivery Rating	- 4.03
+* App Rating	- 3.96
+* Value Rating	- 3.36
+
+**Business Insight**
+Customers with low satisfaction are high likely to churn. 
+
+**Recommendations**
+Focus on customer satisfaction & operations like timely delivery, optimize user experience & implement customer support responsiveness
+
+**5. Order Frequency Analysis**
+* Customer order frequency
+* Relationship between engagement and churn
+
+**Key Findings**
+* Retained customers placed orders more frequently
+* Lower engagement customers showed higher churn probability
+
+**Business Insight**
+Customers who use the platform frequently are less likely to churn 
+
+**Recommendations**
+Increase customer engagement through personalised offers, rewards, loyalty programs, discounts
+
+**6. Cancellation Intent Analysis**
+*Relationship between cancellation intent and actual churn behavior
+
+**Key Findings**
+* Customers planning to cancel had ~41.7% probability of churn
+* Customers without cancellation intent showed only ~11.5% churn probability
+
+**Recommendation**
+Create a retention strategy for the customers who may churn give them retention discounts, customer support outreach & Personalised communication.
+
+**Machine Learning Churn Prediction**
+**Built predictive models to identify customers at high risk of subscription cancellation.**
+**Model used**
+* Logistic Regression - Accuracy 79%
+* Random Forest Classifier - Accuracy 93%
+
+**Model Performance Analysis**
+The Random Forest model performed much better than the Logistic Regression model by analyzing complex relationships between behaviors, expenses, and customer satisfaction.
+
+The predictive model allows organizations to:
+
+* Predict risky customers prior to churn
+* Implement proactive retention initiatives
+* Increase efficiency in customer retention efforts
+* Minimize revenue leakage from lost customers
+* Target valuable customers for retention
+
+**Business Impact**
+Operational Risks Identified such as Loss of recurring revenue, Increased customer acquisition costs, Reduced customer lifetime value, Weak long-term customer loyalty
+
+**Recommendations**
+1. Implement Predictive Churn Monitoring
+2. Improve Customer Satisfaction
+3. Launch Personalized Retention Campaigns
+4. Strengthen Early Customer Engagement
+5. Build Real-Time Customer Risk Dashboard
